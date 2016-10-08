@@ -19,4 +19,3 @@ grok_pattern: %{WORD:state}: session closed %{WORD:reason}: %{IP:src_addr}/%{NUM
 ```
 grok_pattern: RPD_OSPF_NBRUP: OSPF neighbor %{IP:neighbor-address} \(realm %{WORD:ospf-realm} %{INTERFACE:interface} area %{IP:area-idi}\) state changed from %{WORD:old-state} to %{WORD:new-state} due to %{WORD:event-name} \(event reason: %{JUNOS_REASON:reason}\)
 ```
-
